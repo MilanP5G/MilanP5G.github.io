@@ -1,11 +1,11 @@
 # Site settings
 author: Milan Parmar
-title: 
+title: Why Did I Decide To Learn Software Engineering
 header-img: img/home-bg.png
 email: milan_parmar@hotmail.co.uk
 copyright_name: Milan Parmar
 description: > # this means to ignore newlines until "baseurl:"
-  
+  Bring Mankind Closer To Technology
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  MilanP5G
