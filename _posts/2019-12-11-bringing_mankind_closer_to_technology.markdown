@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "BRINGING MANKIND CLOSER TO TECHNOLOGY"
-date:       2019-12-11 11:55:11 +0000
+date:       2019-12-11 06:55:12 -0500
 permalink:  bringing_mankind_closer_to_technology
 ---
 
@@ -13,7 +13,7 @@ permalink:  bringing_mankind_closer_to_technology
  
   I remember when I bought my first phone, that's right the **Nokia 3310**! As I played around with it, I was instantly fascinated by the communication between a human being and techonology alongside the communication between human beings *through* this techonology.
 
-  As years went on, the mobile phone adapted to our needs and wants, and grew into a device which brings convenience and effeciency for our day to day lives. For me, a well thought out smartphone is one that combines beautiful hardware and fluid software to encourage man to become productive, creative and ironically, to become more human. 
+  As years went on, the mobile phone adapted to our needs and wants, and grew into a device which brings convenience and efficiency for our day to day lives. For me, a well thought out smartphone is one that combines beautiful hardware and fluid software to encourage man to become productive, creative and ironically, to become more human. 
 	
   Ever since I owned that 3310, I have been enthusiastic and excited about smartphone technology, how it can help change our lives and push us beyond what we thought was impossible. I look forward to the future where we would be interacting with the world in innumerable ways.
 	
