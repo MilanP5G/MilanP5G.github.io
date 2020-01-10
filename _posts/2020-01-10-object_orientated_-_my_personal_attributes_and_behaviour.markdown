@@ -1,7 +1,7 @@
 ---
 layout: post
-title:      "Object Orientated - My Personal Attributes & Behaviour "
-date:       2020-01-10 21:37:39 +0000
+title:      "My Personal "Attributes & Behaviour" "
+date:       2020-01-10 16:37:40 -0500
 permalink:  object_orientated_-_my_personal_attributes_and_behaviour
 ---
 
