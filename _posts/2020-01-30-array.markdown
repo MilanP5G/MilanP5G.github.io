@@ -1,0 +1,55 @@
+---
+layout: post
+title:      "Array = []"
+date:       2020-01-30 11:37:16 +0000
+permalink:  array
+---
+
+
+So what are arrays? In my own words, arrays are variables that contain an ordered list of data starting from an index value of 0.
+
+I've found in almost every case of Object Orientated Ruby, I have been working with a class variable that is an empty array. These class variables named as `@@all` would need to have instances of the class pushed to them through the `initialize method`
+
+For example,
+
+```
+class Person
+  attr_accessor :name, :age
+	
+	@@all = []
+	
+	def initialize(name, age)
+	  @name = name
+      @age = age
+	  @@all << self
+	end 
+	
+	def self.all
+	  @@all
+	end
+	
+end 
+```
+
+I have often found myself having to iterate through arrays in order to gain a particular result. Not only just bringing forward certain data but also creating a new array with those particular elements. This is achieved by using the `select` method. 
+
+To add onto the Person class example,
+
+```
+	def self.find_by_name(name)
+      self.all.find.select { | name | name }
+	end 
+```
+
+Another example of working with an array within the class is to remove all elements within the class method - `@all`
+
+Adding onto the Person class example,
+
+```
+  def self.delete_all
+	  @@all.clear
+	end 
+```
+
+As of yet, (I'm scared to say this but...) I have not found any difficulties working with arrays and iterating through them however I'm aware that they can play a big role in your Ruby coding and so will work more with them! 
+
