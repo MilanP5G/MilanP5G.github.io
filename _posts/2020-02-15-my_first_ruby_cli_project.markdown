@@ -1,12 +1,13 @@
 ---
 layout: post
-title:      "My first Ruby CLI Project!"
-date:       2020-02-15 19:34:06 +0000
+title:      "My first CLI Project!"
+date:       2020-02-15 14:34:07 -0500
 permalink:  my_first_ruby_cli_project
 ---
 
-
-  I must admit, this was a journey of many blocks and long hours trying to figure out the best way to implement my code from scratch. Nevertheless, it was a really good experience and definitely a big learning curve for me.
+![His Divine Grace A.C Bhaktivedanta Swami Srila Prabhupada](https://back2godhead.com/wp-content/uploads/2013/11/1978-05-11.jpg)
+ 
+ I must admit, this was a journey of many blocks and long hours trying to figure out the best way to implement my code from scratch. Nevertheless, it was a really good experience and definitely a big learning curve for me.
 
   I wanted to create an application that displays the three most popular books from His Divine Grace AC Bhaktivedanta Swami -  a spiritual teacher who spread the Kṛṣṇa Consciousness movement in the western world during the 1970's. I thought this would be a great way to express two things that are very important to me - his teachings and coding.
 
