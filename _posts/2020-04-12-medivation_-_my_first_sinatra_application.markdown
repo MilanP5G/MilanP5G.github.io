@@ -37,17 +37,17 @@ Using ActiveRecord would connect my application to a database and allow my Model
 
 `class CreateUsers < ActiveRecord::Migration[6.0]`
   `def change`
-   ` create_table :users do | t |`
-     ` t.string :username`
+   `create_table :users do | t |`
+     `t.string :username`
       `t.string :email`
-     ` t.string :password_digest`
+     `t.string :password_digest`
     `end`
  `end`
 `end`
 
 Before I created any of the .erb files and started working on the .rb files that connect with each other, I first created the `Helpers` class along with its methods. The `Helpers` methods would ensure that certain functions are only allowed if a `User` is logged in or if it is the current user (who is logged in) carrying out an action.
 
-The ` Helpers` methods:
+The `Helpers` methods:
 `class Helpers`
 
    `def self.current_user(session)`
