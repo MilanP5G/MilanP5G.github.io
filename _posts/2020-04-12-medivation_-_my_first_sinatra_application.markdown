@@ -6,7 +6,7 @@ permalink:  medivation_-_my_first_sinatra_application
 ---
 
 
-![Medivation Logo](http://imgur.com/y5SkbdJ)
+![Medivation Logo](https://imgur.com/301Leh0)
 
 
 This was a great journey, one where I felt I had more of an idea of where I wanted to take my project and learnt a lot along the way.
@@ -26,7 +26,7 @@ My first thought was the models I would need and how they relate to each other. 
 `end`
 
 `class Post < ActiveRecord::Base`
- ` belongs_to :user`
+ `belongs_to :user`
 
  `validates :title, presence: true`
  `validates :content, presence: true`
@@ -72,7 +72,7 @@ Now coming onto the "certain actions" that are accessible by the `current_user` 
      ` user.update(params[:user])`
      ` redirect "/settings"`
     `else`
-      redirect "/home"`
+      `redirect "/home"`
     `end`
   `end`
 	
