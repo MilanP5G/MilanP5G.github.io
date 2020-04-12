@@ -6,7 +6,7 @@ permalink:  medivation_-_my_first_sinatra_application
 ---
 
 
-(https://imgur.com/y5SkbdJ)
+![Medivation Logo](http://imgur.com/y5SkbdJ)
 
 
 This was a great journey, one where I felt I had more of an idea of where I wanted to take my project and learnt a lot along the way.
@@ -28,8 +28,8 @@ My first thought was the models I would need and how they relate to each other. 
 `class Post < ActiveRecord::Base`
  ` belongs_to :user`
 
- ` validates :title, presence: true`
- ` validates :content, presence: true`
+ `validates :title, presence: true`
+ `validates :content, presence: true`
 
 `end`
 
