@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "FlyIn - My first Javascript/Rails API Application"
-date:       2020-08-07 16:32:49 +0000
+date:       2020-08-07 12:32:50 -0400
 permalink:  flyin_-_my_first_javascript_rails_api_application
 ---
 
@@ -13,6 +13,7 @@ I decided to create an application that allows users to post up countries that t
 My first job was to work on my backend. I decided to go for the two obvious models - `Country` & `Place` - and add their attributes. 
 
 `Country` migrations ended up as:
+
 `class CreateCountries < ActiveRecord::Migration[6.0]
   def change
     create_table :countries do |t|
@@ -24,6 +25,7 @@ My first job was to work on my backend. I decided to go for the two obvious mode
 end`
 
 `Place` migrations:
+
 `class CreatePlaces < ActiveRecord::Migration[6.0]
   def change
     create_table :places do |t|
