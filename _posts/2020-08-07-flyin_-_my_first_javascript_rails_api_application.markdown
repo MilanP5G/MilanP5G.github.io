@@ -80,7 +80,7 @@ For example, when I wanted to render all countries (as soon as a user views the 
 
 ```
 function fetchCountries(){
-  fetch('${BASE_URL}/countries')
+  fetch(`${BASE_URL}/countries`)
   .then(resp => resp.json())
   .then(countries => {
     for (const country of countries){
@@ -103,7 +103,7 @@ static deleteCountry(event) {
        id = parseInt(event.target.parentElement.dataset.id)
      }
 
-     fetch('${BASE_URL}/countries/${id}', {
+     fetch(`${BASE_URL}/countries/${id}`, {
        method: "DELETE"
      })
      .then(resp => resp.json())
