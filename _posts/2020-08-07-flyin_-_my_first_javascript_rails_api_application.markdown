@@ -14,7 +14,8 @@ My first job was to work on my backend. I decided to go for the two obvious mode
 
 `Country` migrations ended up as:
 
-`class CreateCountries < ActiveRecord::Migration[6.0]
+```
+class CreateCountries < ActiveRecord::Migration[6.0]
   def change
     create_table :countries do |t|
       t.string :name
@@ -22,11 +23,13 @@ My first job was to work on my backend. I decided to go for the two obvious mode
       t.timestamps
     end
   end
-end`
+end
+```
 
 `Place` migrations:
 
-`class CreatePlaces < ActiveRecord::Migration[6.0]
+```
+class CreatePlaces < ActiveRecord::Migration[6.0]
   def change
     create_table :places do |t|
       t.string :name
@@ -36,7 +39,8 @@ end`
       t.timestamps
     end
   end
-end`
+end
+```
 
 As both countries and places would accept images, I used active storage to make it possible and therefore saving the image on the backend.
 
@@ -45,18 +49,21 @@ The backend was not so much of a pain (minus the active storage, which I had to 
 I first created separate files for each class and a main file titled...you guessed it...the typical `index.js`. 
 I had to write out the attributes within the constructor of the classes. The country would have an id, name and an image. The place would have an id, name, image, description and country id.
 
-`class Country {
+```
+class Country {
   constructor(id, name, image){
     this.id = id
     this.name = name
     this.image = image
   }
 ...
-}`
+}
+```
 
 & 
 
-`class Place {
+```
+class Place {
   constructor(id, name, image, description, country_id) {
     this.id = id
     this.name = name
@@ -65,13 +72,15 @@ I had to write out the attributes within the constructor of the classes. The cou
     this.country_id = country_id
   }
 	...
-	}`
+	}
+	```
 	
 	Next, I jumped straight into blocking out the functions of my application. Most of these functions would include ajax calls - `fetch` requests that take in a URL parameter to receive data from the backend, convert that data to `json` and then manipulate the json through another function.
 	
 For example, when I wanted to render all countries (as soon as a user views the page) I created a fetch collect all the countries created and then send those countries to the `renderCountry` function:
 
-`function fetchCountries(){
+```
+function fetchCountries(){
   fetch(`${BASE_URL}/countries`)
   .then(resp => resp.json())
   .then(countries => {
@@ -80,11 +89,13 @@ For example, when I wanted to render all countries (as soon as a user views the 
       cntry.renderCountry()
     }
   })
-}`
+}
+```
 
 I also used `static` methods which are called upon the class itself rather than the instances. I used a static method to create a delete action. I had to get the id of the object I am deleting, in order to delete the correct country/place and so it is removed on the backend as well as what is displayed to the user. An example of this static method is for the countries:
 
-`static deleteCountry(event) {
+```
+static deleteCountry(event) {
 
      let id = null
      if (event.target.classList.contains('dlte-btn')) {
@@ -99,7 +110,8 @@ I also used `static` methods which are called upon the class itself rather than 
      .then(resp => resp.json())
 
      document.location.reload()
-  }`
+  }
+	```
 	
 	Overall, this was a tough journey as there was a lot of difficulty with syntax, especially with fetch requests. I truly appreciate this project though as I have learnt a lot in a short space of time and have worked with a few elements outside of what I learnt through the curriculum.
 
