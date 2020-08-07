@@ -78,9 +78,9 @@ Next, I jumped straight into blocking out the functions of my application. Most 
 	
 For example, when I wanted to render all countries (as soon as a user views the page) I created a fetch function to collect all the countries created and then send those countries to the `renderCountry` function:
 
-`
+```
 function fetchCountries(){
-  fetch(`${BASE_URL}/countries`)
+  fetch('${BASE_URL}/countries')
   .then(resp => resp.json())
   .then(countries => {
     for (const country of countries){
@@ -89,7 +89,7 @@ function fetchCountries(){
     }
   })
 }
-`
+```
 
 I also used `static` methods which are called upon the class itself rather than the instances. I used a static method to create a delete action. I had to get the id of the object I am deleting, in order to delete the correct country/place and so it is removed on the backend as well as what is displayed to the user. An example of this static method is for the countries:
 
@@ -103,7 +103,7 @@ static deleteCountry(event) {
        id = parseInt(event.target.parentElement.dataset.id)
      }
 
-     fetch(`${BASE_URL}/countries/${id}`, {
+     fetch('${BASE_URL}/countries/${id}', {
        method: "DELETE"
      })
      .then(resp => resp.json())
