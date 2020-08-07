@@ -75,8 +75,6 @@ class Place {
 	}
 	```
 	
-	` `
-	
 Next, I jumped straight into blocking out the functions of my application. Most of these functions would include ajax calls - `fetch` requests that take in a URL parameter to receive data from the backend, convert that data to `json` and then manipulate the json through another function.
 	
 For example, when I wanted to render all countries (as soon as a user views the page) I created a fetch collect all the countries created and then send those countries to the `renderCountry` function:
